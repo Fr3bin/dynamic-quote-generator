@@ -1,22 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fr3_bin Quotes Generator
+
+A modern, elegant quote generator application built with Next.js 15, React 19, and Tailwind CSS.
+
+## Features
+
+- 🎯 **Category-based Quotes**: Generate quotes from different categories (Motivational, Fun, Love, KITian)
+- 👤 **Author Selection**: Choose from famous authors and personalities
+- 🎨 **Modern UI**: Clean, dark theme with custom components
+- 📱 **Responsive Design**: Works seamlessly across all devices
+- ⚡ **Fast Performance**: Built with Next.js 15 and Turbopack
+- 🔤 **Custom Typography**: Beautiful fonts (Jaini Purva for headers, Poppins for body text)
+
+## Tech Stack
+
+- **Framework**: Next.js 15.5.2 with App Router
+- **React**: 19.1.0
+- **Styling**: Tailwind CSS 4
+- **TypeScript**: Full type safety
+- **Icons**: Lucide React
+- **Analytics**: Vercel Analytics
+- **Fonts**: Fontsource (Poppins, Jaini Purva)
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run the development server**
+   ```bash
+   npm run dev
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
