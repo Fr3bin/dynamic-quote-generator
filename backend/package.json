@@ -1,0 +1,28 @@
+{
+  "name": "fr3-bin-quotes-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Fr3_bin Quotes Generator",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "build": "echo 'No build step needed for this setup'",
+    "db:migrate": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio"
+  },
+  "keywords": ["quotes", "api", "express", "neon", "drizzle"],
+  "author": "Fr3_bin",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.29.0",
+    "@neondatabase/serverless": "^0.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "drizzle-kit": "^0.20.0"
+  }
+}

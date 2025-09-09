@@ -1,7 +1,14 @@
 {
-  "name": "fr3-bin-quote-generator",
-  "version": "0.1.0",
+  "name": "dynamic-quote-generator",
+  "version": "1.0.0",
+  "description": "Professional quote generator featuring authentic quotes from KIT students",
+  "author": "Fr3_bin",
+  "license": "MIT",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fr3bin/dynamic-quote-generator.git"
+  },
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",

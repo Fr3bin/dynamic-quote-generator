@@ -56,13 +56,13 @@ export const Select = ({ value, onChange, className, children }: SelectProps) =>
       </button>
       
       {isOpen && (
-        <div className="absolute top-full left-0 w-full bg-[#191a1d] border border-[#404040] rounded-2xl overflow-hidden z-50 shadow-lg">
+        <div className="absolute top-full left-0 w-full bg-[#191a1d] border border-[#404040] rounded-2xl overflow-hidden z-50 shadow-lg max-h-[168px] overflow-y-auto">
           {options.map((option, index) => (
             <button
               key={index}
               type="button"
               onClick={() => handleSelect(option.props.value)}
-              className="w-full text-left px-6 py-4 text-white hover:bg-[#2a2d35] transition-colors text-[16px] font-poppins font-light"
+              className="w-full text-left px-6 py-4 text-white hover:bg-[#2a2d35] transition-colors text-[16px] font-poppins font-light min-h-[56px] flex items-center"
             >
               {option.props.children}
             </button>

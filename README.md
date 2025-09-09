@@ -1,53 +1,127 @@
-# Fr3_bin Quotes Generator
+# Dynamic Quote Generator
 
-A modern, elegant quote generator application built with Next.js 15, React 19, and Tailwind CSS.
+A professional full-stack quote generator application featuring real quotes from KIT students, built with modern web technologies.
 
-## Features
+## 🚀 Features
 
-- 🎯 **Category-based Quotes**: Generate quotes from different categories (Motivational, Fun, Love, KITian)
-- 👤 **Author Selection**: Choose from famous authors and personalities
-- 🎨 **Modern UI**: Clean, dark theme with custom components
-- 📱 **Responsive Design**: Works seamlessly across all devices
-- ⚡ **Fast Performance**: Built with Next.js 15 and Turbopack
-- 🔤 **Custom Typography**: Beautiful fonts (Jaini Purva for headers, Poppins for body text)
+- **Dynamic Quote Generation**: Access 36 authentic quotes from 9 KIT students
+- **Smart Filtering**: Filter by author and quote category (Motivational, Fun, Love, KITian, Wisdom)
+- **Professional UI**: Clean, dark theme with pixel-perfect design
+- **Responsive Design**: Optimized for all screen sizes
+- **Real-time Updates**: Instant quote generation without page refresh
+- **Scrollable Selectors**: Elegant dropdown with scrollable author selection
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- **Framework**: Next.js 15.5.2 with App Router
-- **React**: 19.1.0
-- **Styling**: Tailwind CSS 4
-- **TypeScript**: Full type safety
-- **Icons**: Lucide React
-- **Analytics**: Vercel Analytics
-- **Fonts**: Fontsource (Poppins, Jaini Purva)
+### Frontend
+- **Next.js 15.5.2** - React framework with App Router
+- **React 19.1.0** - Modern React with latest features
+- **TypeScript** - Full type safety and better developer experience
+- **Tailwind CSS 4** - Utility-first CSS framework
+- **Poppins & Jaini Purva** - Professional typography
 
-## Getting Started
+### Backend
+- **Node.js** - JavaScript runtime
+- **Express.js** - Web application framework
+- **Drizzle ORM** - Type-safe database operations
+- **Neon PostgreSQL** - Serverless PostgreSQL database
+- **CORS** - Cross-origin resource sharing support
 
-1. **Install dependencies**
+## 🏗 Architecture
+
+```
+├── src/                    # Frontend source code
+│   ├── app/               # Next.js App Router pages
+│   ├── components/        # Reusable React components
+│   └── lib/              # Utilities and constants
+├── backend/              # Backend API server
+│   └── src/             # Backend source code
+│       ├── db/          # Database configuration and schema
+│       └── index.js     # Express server entry point
+└── public/              # Static assets
+```
+
+## 🚦 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher)
+- npm or yarn
+- PostgreSQL database (Neon recommended)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Fr3bin/dynamic-quote-generator.git
+   cd dynamic-quote-generator
+   ```
+
+2. **Install frontend dependencies**
    ```bash
    npm install
    ```
 
-2. **Run the development server**
+3. **Install backend dependencies**
+   ```bash
+   cd backend
+   npm install
+   ```
+
+4. **Configure environment variables**
+   ```bash
+   cd backend
+   cp .env.example .env
+   # Edit .env with your database URL
+   ```
+
+5. **Run the development servers**
+   
+   Terminal 1 (Backend):
+   ```bash
+   cd backend
+   npm start
+   ```
+   
+   Terminal 2 (Frontend):
    ```bash
    npm run dev
    ```
 
-3. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+6. **Access the application**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:4000
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📡 API Endpoints
 
-## Learn More
+- `GET /api/quote` - Get random quote with optional filters
+- `GET /api/categories` - Get available quote categories
+- `GET /health` - Health check endpoint
+- `POST /api/quote` - Add new quote (admin functionality)
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Design Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Professional Color Scheme**: Dark theme with carefully chosen contrast ratios
+- **Custom Components**: Modular, reusable UI components
+- **Smooth Interactions**: Loading states and transitions
+- **Accessibility**: Proper ARIA labels and keyboard navigation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👥 Contributing
 
-## Deploy on Vercel
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- KIT students who contributed authentic quotes
+- Next.js team for the amazing framework
+- Tailwind CSS for the utility-first approach
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 

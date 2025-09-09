@@ -11,6 +11,7 @@ interface QuoteControlsProps {
   onQuoteTypeChange: (value: string) => void
   onAuthorChange: (value: string) => void
   onGenerateClick: () => void
+  loading?: boolean
 }
 
 export default function QuoteControls({
@@ -18,7 +19,8 @@ export default function QuoteControls({
   author,
   onQuoteTypeChange,
   onAuthorChange,
-  onGenerateClick
+  onGenerateClick,
+  loading = false
 }: QuoteControlsProps) {
   return (
     <div className="flex-1 flex flex-col justify-between min-w-[320px] gap-8 pt-2 h-full">
@@ -61,10 +63,11 @@ export default function QuoteControls({
       {/* Generate Button */}
       <Button 
         onClick={onGenerateClick}
-        className="w-full bg-white text-black hover:bg-gray-100 h-16 text-[16px] font-light flex items-center justify-center space-x-2 rounded-2xl mt-auto"
+        disabled={loading}
+        className="w-full bg-white text-black hover:bg-gray-100 disabled:bg-gray-300 disabled:cursor-not-allowed h-16 text-[16px] font-light flex items-center justify-center space-x-2 rounded-2xl mt-auto"
       >
-        <Edit3 className="w-6 h-6" />
-        <span>Generate Quotes</span>
+        <Edit3 className={`w-6 h-6 ${loading ? 'animate-spin' : ''}`} />
+        <span>{loading ? 'Generating...' : 'Generate Quotes'}</span>
       </Button>
     </div>
   )
