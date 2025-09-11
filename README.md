@@ -1,4 +1,4 @@
-# Dynamic Quote Generator
+# Dynamic Quote Generator - Heng Lyhour
 
 A professional full-stack quote generator application featuring real quotes from KIT students, built with modern web technologies.
 
